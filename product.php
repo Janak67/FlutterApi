@@ -25,6 +25,14 @@
     <title>Document</title>
 </head>
 <body>
+    <style>
+        body {
+        background-image: url('https://c0.wallpaperflare.com/preview/907/573/217/buy-shopping-cart-keyboard-online.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+    </style>
     <table class="table">
         <thead>
             <tr>

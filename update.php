@@ -38,28 +38,35 @@
     <title>Shopping</title>
 </head>
 <body>
-    <h1>Update</h1>
-
+    <style>
+    body {
+      background-image: url('https://c0.wallpaperflare.com/preview/907/573/217/buy-shopping-cart-keyboard-online.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+  <center><h1>Update</h1></center>
     <form method ="post" style="padding:20px">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Product Name</label>
-        <input type="Product Name" class="form-control" name="name" aria-describedby="emailHelp">
+        <input type="Product Name" value="<?php print($data['name']);?>" class="form-control" name="name" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Product Prize</label>
-        <input type="number" class="form-control" name="prize">
+        <input type="number" value="<?php print($data['prize']);?>" class="form-control" name="prize">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Product Qty</label>
-        <input type="number" class="form-control" name="qty">
+        <input type="number" value="<?php print($data['qty']);?>" class="form-control" name="qty">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Product Rate</label>
-        <input type="text" class="form-control" name="rate">
+        <input type="text" value="<?php print($data['rate']);?>" class="form-control" name="rate">
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Product Category</label>
-        <input type="text" class="form-control" name="category">
+        <input type="text" value="<?php print($data['category']);?>" class="form-control" name="category">
       </div>
       <button type="submit" class="btn btn-primary" name="update">Update</button>
     </form>
