@@ -6,12 +6,12 @@
 
     $conn = mysqli_connect($SERVERNAME,$USERNAME,$PASSWORD,$DBNAME);
 
-    if($conn)
-    {
-        echo "Successfully connection";
-    }
-    else
-    {
-        echo "Failed connection";
-    }
+    // if($conn)
+    // {
+    //     echo "Successfully connection";
+    // }
+    // else
+    // {
+    //     echo "Failed connection";
+    // }
 ?>

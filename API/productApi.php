@@ -24,7 +24,8 @@
             http_response_code(400);
         }
     }
-    else{
+    else
+    {
         $msg = array('status'=>'Key not Exits');
         echo json_encode($msg);
         http_response_code(404);
