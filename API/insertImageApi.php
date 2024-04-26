@@ -1,8 +1,8 @@
 <?php
 
-    include("../../connection.php");
+    include("../connection.php");
 
-    $imagePath = "/FLUTTERAPI/image/";
+    $imagePath = "../image/";
     
     @$image = $_FILES['image'];
     @$imgName = $image['name'];
