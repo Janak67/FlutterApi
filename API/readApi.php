@@ -12,9 +12,11 @@
             $arr[] = $data;
         }
     }
+
     // model in list
     // $msg = array('status'=>'Ok','product'=>$arr);
     // $json = json_encode($msg,JSON_PRETTY_PRINT);
+    
     $json = json_encode($arr,JSON_PRETTY_PRINT);
     echo $json;
 ?>
