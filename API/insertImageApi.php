@@ -18,8 +18,8 @@
         @$path = $image['tmp_name'];
         @$uploadFile = $imagePath.basename($imgName);
 
-        move_uploaded_file($path,$uploadFile);
-        if($res)
+        $resp = move_uploaded_file($path,$uploadFile);
+        if($resp)
         {
             $query = "INSERT INTO `product` (`name`,`prize`,`qty`,`rate`,`category`,`image`) VALUES ('$name','$prize','$qty','$rate','$category','$imgName')";
             $res = mysqli_query($conn, $query);
